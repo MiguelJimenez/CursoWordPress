@@ -1,0 +1,312 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+*
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face
+{
+	font-family: "chaletcito";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/Chalet.eot);
+	src: url(../fonts/Chalet.eot?#iefix) format("embedded-opentype"),
+		 url(../fonts/Chalet.woff) format("woff"),
+		 url(../fonts/Chalet.ttf) format("truetype"),
+		 url(../fonts/Chalet.svg#Chalet) format("svg");
+}
+
+a
+{
+	color: #1E6381;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #F60;
+}
+
+/* max-width: 100% me vuelve flexible el objeto al que se lo aplique(por objeto entiendan cualquier cosa distinta a texto por ejemplo img, video, audio, iframe, embed, object) */
+audio, iframe, img, video
+{
+	max-width: 100%;
+}
+
+audio, cite, video
+{
+	display: block;
+	margin: auto;
+	padding: 1em 0;
+}
+
+body, html
+{
+	background: url(../img/fondo-content.png);
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+    min-height: 100%;
+    position: absolute;
+	text-align: center;
+    width: 100%;
+}
+
+cite
+{
+	color: yellow;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-shadow: .1em .1em .5em rgba(255,255,255,.8);
+}
+
+fieldset
+{
+	border: thin solid #C6ECF9;
+	border-radius: .5em;
+	padding: 1em;
+}
+
+footer, header
+{
+	background: #C6ECF9 url(../img/fondo-header.png);
+	border-bottom: thin solid #57ABB8;
+	font-family: "chaletcito", Verdana, Arial;
+	width: 100%;
+}
+
+footer
+{
+	border-bottom: 0;
+	bottom: 0;
+	border-top: thin solid #57ABB8;
+	font-size: .75em;
+	padding: .5em 0;
+	/* http://librosweb.es/css/capitulo5.html */
+	position: absolute; /*static | absolute | relative | fixed */
+}
+
+
+form
+{
+	width: 100%;
+}
+
+form div
+{
+	margin: .25em auto;
+}
+
+h2
+{
+	color: #C6ECF9;
+	text-shadow: .1em .1em .5em rgba(0,0,0,.8);
+}
+
+header h1, nav
+{
+	/*background: yellow;*/
+	display: inline-block;
+	vertical-align: middle;
+	width: 25%;
+}
+
+hr
+{
+	border: thin dotted #FF0;
+	margin: .5em auto;
+	width: 95%;
+}
+
+input[type="date"], input[type="email"], input[type="text"], textarea
+{
+	background: #EEE;
+	border-radius: .25em;
+	color: #F60;
+	font-size: 1em;
+	padding: .25em;
+	width: 95%;
+}
+
+input[type="date"]:focus, input[type="email"]:focus, input[type="text"]:focus, textarea:focus
+{
+	background: #C6ECF9;
+}
+
+input[type="submit"]
+{
+	background: #C6ECF9;
+	border-radius: 0 .25em;
+	color: #F60;
+	font-family: "chaletcito";
+	font-size: 1.25em;
+	padding: .25em;
+}
+
+input[type="submit"]:hover
+{
+	background: #F60;
+	border-radius: .25em 0;
+	color: #EEE;
+	cursor: pointer;
+}
+
+label
+{
+	cursor: pointer;
+	display: block;
+	margin: .25em auto;
+	text-align: left;
+}
+
+legend
+{
+	color: #C6ECF9;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-shadow: .1em .1em .5em #FFF;
+}
+
+nav
+{
+	font-size: 2em;
+	width: 70%;
+}
+
+nav li
+{
+	border-right: thin solid #F60;
+	display: inline;
+	list-style: none;
+	padding: 0 1em;
+}
+
+/*
+http://www.librosweb.es/css_avanzado/capitulo3/selectores_de_css_3.html
+:first-child = primer elemento
+:nth-child(n) = es el n elemento
+:last-child = es el último elemento
+*/
+nav li:last-child
+{
+	border: 0;
+}
+
+textarea
+{
+	resize:none;
+}
+
+#acerca-descripcion, #acerca-multimedia, #contacto-datos, #mapa
+{
+	background: rgba(30,99,129,.85); /*#1E6381*/
+	-ms-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #FFF;
+	display: inline-block;
+	font-size: 1.35em;
+	margin: auto;
+	min-height: 680px;
+	padding: 1em;
+	vertical-align: top;
+	width: 47%;
+}
+
+#acerca-descripcion p
+{
+	padding: .5em 1em;
+	text-align: left;
+}
+
+#acerca-multimedia video
+{
+	padding-top: 0;
+}
+
+#contenido
+{
+	height: auto;
+	margin: 1em auto 2em;
+	width: 100%;
+}
+
+#figura-index
+{
+	font-size: 1.5em;
+	margin: auto;
+	text-shadow: .1em .1em .5em rgba(30,99,129,.5);
+	width:80%;
+}
+
+#figura-index img
+{
+	border: thick dashed #F60;
+}
+
+#mapa a
+{
+	color:white;
+}
+
+#mapa a:hover
+{
+	color:#F60;
+}
+
+.cambio
+{
+	-ms-transition: all 2.5s ease-out;
+	-moz-transition: all 2.5s ease-out;
+	-webkit-transition: all 2.5s ease-out;
+	transition: all 2.5s ease-out; /*ease-in | linear | diagonal */
+}
+
+.redonda
+{
+	border-radius: 100%;
+}
+
+.tecnologias
+{
+	background: #C6ECF9;
+	border: thin solid #1E6381;
+	border-radius: 1em;
+	margin: .5em auto;
+	width: 90%;
+}
+
+/*
+Pares :nth-child(2n)
+Impares :nth-child(2n+1)
+*/
+.tecnologias:nth-child(2n)
+{
+	background: #CCC;
+	border: thin solid #F60;
+}
+
+.tecnologias figcaption, .tecnologias img
+{
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	width: 80%
+}
+
+.tecnologias img
+{
+	background: rgba(255,255,255,.8);
+	width: 15%;
+}
+
+.tecnologias img:hover
+{
+	-ms-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Sitio con HTML5. ACERCA</title>
+	<meta name="description" content="Bienvenidos a mi sitio web hecho con HTML5, en esta sección aprenderás por que es importante utilizar HTML5, además implementaremos audio y video nativamente." />
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=0" />
+	<!-- http://convertico.com/ -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<!-- http://humanstxt.org/ -->
+	<link rel="author" type="text/plain" href="humans.txt"/>
+	<!-- http://www.sitemaps.org/ -->
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+	<link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="index.html">
+				<img src="img/bextlan.png" title="bextlan.com" />
+			</a>
+		</h1>
+		<nav>
+			<ul>
+				<li><a class="cambio" href="index.html">Inicio</a></li>
+				<li><a class="cambio" href="acerca.html">Acerca</a></li>
+				<li><a class="cambio" href="contacto.html">Contacto</a></li>
+				<li><a class="cambio" href="tecnologias.html">Tecnologías</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section id="contenido">
+		<article id="acerca-descripcion">
+			<h2>¿Por qué es importante HTML5?</h2>
+			<p>
+				HTML5 es la piedra angular de la plataforma web abierta de la W3C, un marco diseñado para apoyar la innovación y fomentar el potencial que la web tiene para ofrecer. Es el presente de la web y si no lo has entendido, ya eres parte de la vieja escuela.
+			</p>
+			<hr />
+			<p>
+				Entender HTML5 es entender que hoy nos conectamos desde diferentes dispositivos. Define los nuevos estándares de desarrollo web, tanto para equipos de escritorio, como para móviles. Se abren las puertas a nuevas opciones de diseño y dinámicas de información. 
+			</p>
+			<hr />
+			<p>
+				Se acabó la era de los webmasters y hoy hablamos de equipos transdisciplinarios: frontends, backends, mobile devs, responsive designers, comunity managers, digital marketers, sysadmins, dba's y arquitectos de información que día a día contribuyen y colaboran en los proyectos que estan reinventando la web.
+			</p>
+		</article>
+		<article id="acerca-multimedia">
+			<!-- http://www.mirovideoconverter.com/ -->
+			<video controls preload poster="img/web-hero.jpg">
+				<source src="video/web-super-hero.mp4" type="video/mp4" />
+				<source src="video/web-super-hero.webm" type="video/webm" />
+			</video>
+			<cite>It's not late... to save the WEB...<br />Be a Hero!</cite>
+			<hr />
+			<audio controls preload autoplay>
+				<source src="audio/HelenaFix-IMoveOn.mp3" type="audio/mpeg" />
+				<source src="audio/HelenaFix-IMoveOn.ogg" type="audio/ogg" />
+			</audio>
+			<cite>I Move On (Tema de Sintel)<br />por Helena Fix</cite>
+		</article>
+	</section>
+	<footer>
+		Sitio hecho en <a class="cambio" href="http://w3.org/html/logo" target="_blank">HTML5</a> por @jonmircha.
+	</footer>
+</body>
+</html>
